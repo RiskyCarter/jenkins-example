@@ -1,9 +1,10 @@
 import org.kohsuke.github.*
 
-int rateLimitBefore = 0
-String githubLogin = 'riskycarter'                                   // github user login
-String githubPassword = 'Newsza2540.'                      // github user personal access token
+
 def buildApp() {
+    int rateLimitBefore = 0
+    String githubLogin = 'riskycarter'                                   // github user login
+    String githubPassword = 'Newsza2540.'                      // github user personal access token
     echo 'buildApp called..'
     GitHub github = GitHub.connectUsingPassword(githubLogin, githubPassword)
     rateLimitBefore = github.getRateLimit().remaining
