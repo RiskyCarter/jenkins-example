@@ -14,9 +14,9 @@ pipeline {
         }
         stage('Build') {
             steps {
-                script {
+                //script {
                     //gv.buildApp()
-                }
+                //}
                 echo 'Building..'
             }
         }
